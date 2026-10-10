@@ -33,7 +33,7 @@ export default function PrivacyPage() {
               >
                 {site.phone}
               </a>{" "}
-              (phone &amp; WhatsApp). Service area: London, UK.
+              (phone &amp; WhatsApp).
             </p>
           </section>
 
