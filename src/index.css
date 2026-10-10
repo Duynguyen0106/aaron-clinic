@@ -74,14 +74,16 @@ button {
   justify-content: space-between;
   gap: 1rem;
   padding: 1rem 1.25rem;
+  color: var(--bone);
   transition: background 0.35s var(--ease), backdrop-filter 0.35s var(--ease),
-    box-shadow 0.35s var(--ease);
+    box-shadow 0.35s var(--ease), color 0.35s var(--ease);
 }
 
 .nav.is-scrolled {
   background: rgba(247, 244, 238, 0.86);
   backdrop-filter: blur(14px);
   box-shadow: 0 1px 0 var(--line);
+  color: var(--ink);
 }
 
 .nav__brand {
@@ -95,10 +97,18 @@ button {
   display: none;
   gap: 1.5rem;
   font-size: 0.95rem;
+  color: rgba(247, 244, 238, 0.82);
+}
+
+.nav.is-scrolled .nav__links {
   color: var(--ink-soft);
 }
 
 .nav__links a:hover {
+  color: var(--brass);
+}
+
+.nav.is-scrolled .nav__links a:hover {
   color: var(--forest);
 }
 
@@ -108,16 +118,26 @@ button {
   justify-content: center;
   padding: 0.65rem 1rem;
   border-radius: 999px;
-  background: var(--forest);
-  color: var(--bone);
+  background: var(--brass);
+  color: var(--forest-deep);
   font-weight: 600;
   font-size: 0.92rem;
-  transition: transform 0.25s var(--ease), background 0.25s var(--ease);
+  transition: transform 0.25s var(--ease), background 0.25s var(--ease),
+    color 0.25s var(--ease);
+}
+
+.nav.is-scrolled .nav__cta {
+  background: var(--forest);
+  color: var(--bone);
 }
 
 .nav__cta:hover {
-  background: var(--forest-deep);
+  background: #d4b57a;
   transform: translateY(-1px);
+}
+
+.nav.is-scrolled .nav__cta:hover {
+  background: var(--forest-deep);
 }
 
 .hero {
