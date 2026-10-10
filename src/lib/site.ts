@@ -4,9 +4,15 @@ export const site = {
   tagline: "Osteopathy & sound, brought to you",
   practitioner: {
     name: "Aaron Horn",
-    title: "Osteopathy & Sound Practitioner",
+    title: "GOsC-Registered Osteopath",
+    regNo: "12346",
+    qualifications: "BSc (Hons) Ost",
+    college: "British College of Naturopathy and Osteopathy (BCNO)",
+    registered: "7 August 2026",
+    goscUrl:
+      "https://www.osteopathy.org.uk/register-search/registrants/003WT00000T8U4lYAF/",
     credentials:
-      "Grammy-nominated producer and London sound practitioner — hands-on osteopathic care woven with therapeutic sound",
+      "GOsC-registered osteopath (Reg. No. 12346), Grammy-nominated producer, and London sound practitioner",
   },
   phone: "+44 7818 065834",
   phoneHref: "tel:+447818065834",
@@ -24,10 +30,20 @@ export const site = {
 } as const;
 
 export const highlights = [
+  "GOsC Reg. No. 12346",
   "Mobile visits across London",
   "Osteopathy with therapeutic sound",
-  "Home, studio, or workplace",
   "Book directly on WhatsApp",
+] as const;
+
+export const venues = [
+  "National Portrait Gallery",
+  "Soho House",
+  "The Shard",
+  "Nike London",
+  "Earth Hackney",
+  "Camp Bestival",
+  "Rob da Bank Sleep Retreat",
 ] as const;
 
 export const visitSteps = [
@@ -52,6 +68,11 @@ export const visitSteps = [
 ] as const;
 
 export const faqs = [
+  {
+    question: "Is Aaron a registered osteopath?",
+    answer:
+      "Yes. Aaron Horn is fully registered with the General Osteopathic Council (GOsC Reg. No. 12346). You can verify him on the public GOsC register.",
+  },
   {
     question: "Do you have a fixed clinic?",
     answer:

@@ -20,7 +20,7 @@ const body = Source_Sans_3({
 });
 
 const description =
-  "Aaron Horn — mobile osteopathy and therapeutic sound across London. Book by WhatsApp for home, studio, or workplace visits.";
+  "Aaron Horn — GOsC-registered osteopath (Reg. No. 12346) offering mobile osteopathy and therapeutic sound across London. Book by WhatsApp.";
 
 export const metadata: Metadata = {
   metadataBase: new URL(site.websiteUrl),
@@ -35,10 +35,12 @@ export const metadata: Metadata = {
     "mobile osteopath London",
     "sound therapy London",
     "sound bath London",
-    "Aaron Horn osteopathy",
+    "Aaron Horn osteopath",
+    "GOsC osteopath London",
     "holistic osteopath London",
     "gong bath London",
     "home visit osteopath",
+    "BCNO osteopath",
   ],
   authors: [{ name: site.practitioner.name }],
   creator: site.name,

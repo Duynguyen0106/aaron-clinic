@@ -24,7 +24,9 @@ export default function PrivacyPage() {
             <h2 className="font-display text-2xl text-forest">Who we are</h2>
             <p className="mt-3">
               {site.name} (“we”, “us”) is a mobile osteopathy and sound practice
-              operated by {site.practitioner.name}. Contact:{" "}
+              operated by {site.practitioner.name},{" "}
+              {site.practitioner.title} (GOsC Reg. No.{" "}
+              {site.practitioner.regNo}). Service area: London, UK. Contact:{" "}
               <a
                 href={site.phoneHref}
                 className="font-medium text-teal hover:text-forest"

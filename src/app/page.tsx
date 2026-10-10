@@ -80,6 +80,10 @@ export default function HomePage() {
               ready to soften. Sessions are unhurried, precise, and shaped
               around how you arrive that day.
             </p>
+            <p className="mt-4 text-sm font-semibold text-forest">
+              GOsC Reg. No. {site.practitioner.regNo} · Fully registered ·{" "}
+              {site.serviceArea}
+            </p>
             <div className="mt-8">
               <ButtonLink href="/about" variant="forest">
                 About Aaron

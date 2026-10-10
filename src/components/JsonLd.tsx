@@ -9,16 +9,22 @@ export function JsonLd() {
         "@id": `${site.websiteUrl}/#practitioner`,
         name: site.practitioner.name,
         jobTitle: site.practitioner.title,
+        identifier: site.practitioner.regNo,
         description: site.practitioner.credentials,
         telephone: site.phone,
         url: site.websiteUrl,
+        alumniOf: {
+          "@type": "CollegeOrUniversity",
+          name: site.practitioner.college,
+        },
         areaServed: {
           "@type": "City",
           name: "London",
         },
+        sameAs: [site.practitioner.goscUrl],
       },
       {
-        "@type": "ProfessionalService",
+        "@type": "MedicalBusiness",
         "@id": `${site.websiteUrl}/#practice`,
         name: `${site.name} — Osteopathy & Sound`,
         description: site.tagline,
@@ -27,6 +33,7 @@ export function JsonLd() {
         areaServed: "London, UK",
         priceRange: "$$",
         founder: { "@id": `${site.websiteUrl}/#practitioner` },
+        employee: { "@id": `${site.websiteUrl}/#practitioner` },
         hasOfferCatalog: {
           "@type": "OfferCatalog",
           name: "Services",
