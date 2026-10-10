@@ -71,32 +71,32 @@ export default function AboutPage() {
         dangerouslySetInnerHTML={{ __html: JSON.stringify(personLd) }}
       />
 
-      <section className="relative min-h-[78vh] overflow-hidden text-bone">
+      <section className="relative min-h-[78svh] overflow-hidden text-bone">
         <Image
           src="/images/aaron-gong.jpg"
           alt="Aaron Horn with gong and flute"
           fill
           priority
-          className="object-cover object-[58%_center]"
+          className="object-cover object-[18%_32%] sm:object-[30%_40%] md:object-[58%_center]"
           sizes="100vw"
         />
-        <div className="absolute inset-0 bg-[linear-gradient(180deg,rgba(10,31,27,0.45)_0%,rgba(10,31,27,0.55)_40%,rgba(10,31,27,0.88)_100%)]" />
-        <div className="relative z-10 mx-auto flex min-h-[78vh] max-w-6xl items-end px-5 pb-14 pt-28 md:px-8 md:pb-16">
-          <div className="section-fade max-w-2xl">
+        <div className="absolute inset-0 bg-[linear-gradient(180deg,rgba(10,31,27,0.55)_0%,rgba(10,31,27,0.35)_35%,rgba(10,31,27,0.88)_100%)]" />
+        <div className="relative z-10 mx-auto flex min-h-[78svh] max-w-6xl items-end px-4 pb-[max(2rem,env(safe-area-inset-bottom))] pt-[calc(5.5rem+env(safe-area-inset-top))] sm:px-5 sm:pb-14 md:px-8 md:pb-16">
+          <div className="section-fade w-full max-w-2xl">
             <p className="text-xs font-semibold tracking-[0.2em] text-brass uppercase">
               About
             </p>
-            <h1 className="mt-3 font-display text-[clamp(2.8rem,8vw,5rem)] leading-[0.95] font-extrabold tracking-[-0.03em]">
+            <h1 className="mt-3 font-display text-[clamp(2.5rem,11vw,5rem)] leading-[0.95] font-extrabold tracking-[-0.03em] drop-shadow-[0_2px_18px_rgba(0,0,0,0.45)]">
               Aaron Horn
             </h1>
-            <p className="mt-4 font-display text-xl font-semibold md:text-2xl">
+            <p className="mt-3 font-display text-lg font-semibold drop-shadow-[0_2px_12px_rgba(0,0,0,0.4)] sm:mt-4 sm:text-xl md:text-2xl">
               {site.practitioner.title}
             </p>
-            <p className="mt-3 max-w-xl text-base leading-relaxed text-bone/88 md:text-lg">
+            <p className="mt-3 max-w-xl text-[0.95rem] leading-relaxed text-bone/90 sm:text-base md:text-lg">
               Listening is the through-line — in the studio, in sound baths, and
               in hands-on osteopathic care across London.
             </p>
-            <div className="mt-6 flex flex-wrap gap-2">
+            <div className="mt-5 flex flex-wrap gap-2 sm:mt-6">
               <span className="inline-flex rounded-full border border-white/25 bg-white/10 px-3 py-1.5 text-xs font-semibold text-bone sm:text-sm">
                 GOsC Reg. No. {site.practitioner.regNo}
               </span>

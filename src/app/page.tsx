@@ -175,23 +175,25 @@ export default function HomePage() {
               what you need and your area of London.
             </p>
           </div>
-          <div className="mt-10 overflow-hidden rounded-2xl border border-line bg-white">
-            <table className="w-full text-left text-sm">
+          <div className="mt-10 overflow-x-auto rounded-2xl border border-line bg-white">
+            <table className="w-full min-w-[28rem] text-left text-sm">
               <thead className="bg-mist/80 text-xs tracking-wide text-muted uppercase">
                 <tr>
-                  <th className="px-5 py-3 font-semibold">Service</th>
-                  <th className="px-5 py-3 font-semibold">Duration</th>
-                  <th className="px-5 py-3 font-semibold">Fee</th>
+                  <th className="px-4 py-3 font-semibold sm:px-5">Service</th>
+                  <th className="px-4 py-3 font-semibold sm:px-5">Duration</th>
+                  <th className="px-4 py-3 font-semibold sm:px-5">Fee</th>
                 </tr>
               </thead>
               <tbody>
                 {pricing.map((row) => (
                   <tr key={row.service} className="border-t border-line">
-                    <td className="px-5 py-4 font-medium text-forest">
+                    <td className="px-4 py-4 font-medium text-forest sm:px-5">
                       {row.service}
                     </td>
-                    <td className="px-5 py-4 text-muted">{row.duration}</td>
-                    <td className="px-5 py-4 text-muted">{row.price}</td>
+                    <td className="px-4 py-4 text-muted sm:px-5">
+                      {row.duration}
+                    </td>
+                    <td className="px-4 py-4 text-muted sm:px-5">{row.price}</td>
                   </tr>
                 ))}
               </tbody>

@@ -84,8 +84,11 @@ body {
   }
 }
 
-.hero-media img {
-  animation: hero-drift 18s cubic-bezier(0.22, 1, 0.36, 1) infinite alternate;
+/* Keep mobile hero still so Aaron stays framed; drift only on larger screens */
+@media (min-width: 768px) {
+  .hero-media img {
+    animation: hero-drift 18s cubic-bezier(0.22, 1, 0.36, 1) infinite alternate;
+  }
 }
 
 .faq-panel {
